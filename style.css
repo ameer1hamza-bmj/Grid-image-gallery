@@ -1,27 +1,31 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     color: white;
     font-family: sans-serif;
 }
-.container{
+
+.container {
     background-color: #222;
     background-repeat: no-repeat;
     background-size: cover;
-display: grid;
-gap: 5px;
-grid-template-columns: repeat(6, 1fr);
-grid-template-rows: 150px 150px 150px 150px;
-height: 100vh;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 150px 150px 150px 150px;
+    height: 100vh;
 }
-.items{
-   padding:12px;
-   margin: 10px 5px;
-   background-color: #180153;
-   box-shadow: 0px 0px 5px white;
+
+.items {
+    padding: 12px;
+    margin: 10px 5px;
+    background-color: #180153;
+    box-shadow: 0px 0px 5px white;
+    border-radius: 5px;
 }
-.item1{
+
+.item1 {
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
     background-image: url(https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D);
@@ -31,11 +35,13 @@ height: 100vh;
     cursor: pointer;
     transition: all 1s ease-in-out;
 }
-.item1:hover{
+
+.item1:hover {
     background-position: center;
- background-color: rgb(202, 202, 202);
+    background-color: rgb(202, 202, 202);
 }
-.item2{
+
+.item2 {
     grid-column: 3 / span 2;
     grid-row: 1 / span 1;
     background-image: url(https://plus.unsplash.com/premium_photo-1673697239981-389164b7b87f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bmF0dXJlfGVufDB8fDB8fHww);
@@ -46,11 +52,13 @@ height: 100vh;
     transition: all 1s ease-in-out;
 
 }
-.item2:hover{
+
+.item2:hover {
     background-position: center;
     background-color: rgb(161, 161, 161);
 }
-.item3{
+
+.item3 {
     background-color: #019AAB;
     grid-row: 1 / span 1;
     grid-column: 5 / span 1;
@@ -62,14 +70,16 @@ height: 100vh;
     transition: all 1s ease-in-out;
 
 }
-.item3:hover{
+
+.item3:hover {
     background-position: center;
     background-color: rgb(199, 199, 199);
 }
-.item4{
+
+.item4 {
     background-color: transparent;
     display: grid;
- gap: 0;
+    gap: 0;
     grid-template-columns: repeat(2, 70px);
     justify-content: center;
     grid-column: 6 / span 1;
@@ -78,12 +88,15 @@ height: 100vh;
     padding: 0;
     box-shadow: none;
 }
-.child{
-margin: 0px 0px 0px 5px;
-box-shadow: 0px 0px 5px white;
-cursor: pointer;
+
+.child {
+    margin: 0px 0px 0px 5px;
+    box-shadow: 0px 0px 5px white;
+    cursor: pointer;
+    border-radius: 5px;
 }
-.child1{
+
+.child1 {
     margin-left: -35px;
     background-position: top;
     background-color: #222;
@@ -92,11 +105,13 @@ cursor: pointer;
     transition: all 1s ease-in-out;
     background-image: url(https://media.istockphoto.com/id/1490511200/photo/asciano-crete-senesi-rolling-landscape-in-tuscany.jpg?s=612x612&w=0&k=20&c=V6jZDW8O8mUJz387eCxOl1E11HUb9oAuUwtfT5WWNzM=);
 }
-.child1:hover{
+
+.child1:hover {
     background-position: center;
     background-color: rgb(199, 199, 199);
 }
-.child2{
+
+.child2 {
     background-color: #D8552A;
     margin-right: -35px;
     background-position: top;
@@ -106,41 +121,47 @@ cursor: pointer;
     transition: all 1s ease-in-out;
     background-image: url(https://media.istockphoto.com/id/1270042705/photo/tuscany-countryside-panorama-rolling-hills-and-wheat-fields-at-sunset-pisa-italy.jpg?s=612x612&w=0&k=20&c=sMJzbQm-oQWfv0LfGaCgKxeo-ko346Hk5TAN7GTntaU=);
 }
-.child2:Hover{
+
+.child2:Hover {
     background-position: center;
     background-color: rgb(199, 199, 199);
 }
-.child3{
+
+.child3 {
     background-color: #039F05;
     margin-left: -35px;
-   margin-top: 5px;
-   background-position: top;
-   background-color: #222;
-   background-blend-mode: hard-light;
-   cursor: pointer;
-   transition: all 1s ease-in-out;
-   background-image: url(https://media.istockphoto.com/id/474966771/photo/seascape-and-sun-on-blue-sky.jpg?s=612x612&w=0&k=20&c=weRWMzfrJZId9oDGVgejoSc0cyJzyXViWAKuGFsdzu0=);
+    margin-top: 5px;
+    background-position: top;
+    background-color: #222;
+    background-blend-mode: hard-light;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    background-image: url(https://media.istockphoto.com/id/474966771/photo/seascape-and-sun-on-blue-sky.jpg?s=612x612&w=0&k=20&c=weRWMzfrJZId9oDGVgejoSc0cyJzyXViWAKuGFsdzu0=);
 }
-.child3:Hover{
+
+.child3:Hover {
     background-position: center;
     background-color: rgb(199, 199, 199);
 }
-.child4{
+
+.child4 {
     background-color: #AC04A6;
     margin-right: -35px;
-       margin-top: 5px;
-       background-position: top;
-       background-color: #222;
-       background-blend-mode: hard-light;
-       cursor: pointer;
-       transition: all 1s ease-in-out;
-       background-image: url(https://media.istockphoto.com/id/616123548/photo/sunrise-at-a-brazilian-beach.jpg?s=612x612&w=0&k=20&c=jFVGKeGHtIcXNNdT1148CMz3jENZ_Axa2bFLvYMA5So=);
+    margin-top: 5px;
+    background-position: top;
+    background-color: #222;
+    background-blend-mode: hard-light;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    background-image: url(https://media.istockphoto.com/id/616123548/photo/sunrise-at-a-brazilian-beach.jpg?s=612x612&w=0&k=20&c=jFVGKeGHtIcXNNdT1148CMz3jENZ_Axa2bFLvYMA5So=);
 }
-.child4:Hover{
+
+.child4:Hover {
     background-position: center;
     background-color: rgb(199, 199, 199);
 }
-.item5{
+
+.item5 {
     background-color: #01C1F0;
     grid-row: 2 / span 1;
     grid-column: 1 / span 1;
@@ -151,41 +172,47 @@ cursor: pointer;
     cursor: pointer;
     transition: all 1s ease-in-out;
 }
-.item5:hover{
+
+.item5:hover {
     background-position: center;
     background-color: rgb(199, 199, 199);
 }
-.item6{
+
+.item6 {
     background-color: #DB552F;
-grid-column: 2 / span 1;
-grid-row: 2 / span 1;
-background-image: url(https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=600);
-background-position: center;
-background-color: #222;
-background-blend-mode: hard-light;
-cursor: pointer;
-transition: all 1s ease-in-out;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    background-image: url(https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-position: center;
+    background-color: #222;
+    background-blend-mode: hard-light;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
 }
-.item6:hover{
+
+.item6:hover {
     background-position: bottom;
     background-color: rgb(199, 199, 199);
 }
-.item7{
+
+.item7 {
     background-color: #00A400;
     grid-row: 2 / span 1;
     grid-column: 3 / span 2;
     background-image: url(https://media.istockphoto.com/id/2053229241/photo/blooming-lupine-flowers-on-the-stokksnes-headland.jpg?s=612x612&w=0&k=20&c=BHXJ70-yz2ei8TVOZ1sGsZYHEZNNtPs1WyrVjIN3q_0=);
     background-position: top;
-background-color: #222;
-background-blend-mode: hard-light;
-cursor: pointer;
-transition: all 1s ease-in-out;
+    background-color: #222;
+    background-blend-mode: hard-light;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
 }
-.item7:hover{
+
+.item7:hover {
     background-position: center;
     background-color: rgb(199, 199, 199);
 }
-.item8{
+
+.item8 {
     background-color: #2776EC;
     grid-row: 2 / span 1;
     grid-column: 5 / span 1;
@@ -196,11 +223,13 @@ transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     background-image: url(https://media.istockphoto.com/id/1856365839/photo/wild-flowers.webp?a=1&b=1&s=612x612&w=0&k=20&c=lx3oLdvLVoTsuMu28W-KcvaA8B3pX4RMtywEv6pNorE=);
 }
-.item8:hover{
+
+.item8:hover {
     background-position: center;
     background-color: rgb(199, 199, 199);
 }
-.item9{
+
+.item9 {
     grid-row: 2 / span 1;
     grid-column: 6 / span 1;
     background-color: #D24726;
@@ -211,11 +240,13 @@ transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     background-image: url(https://media.istockphoto.com/id/1629533738/photo/godafoss-waterfall-flowing-with-colorful-sunset-sky-and-male-tourist-standing-on-cliff-in.jpg?s=612x612&w=0&k=20&c=oKRdh9yZhabi7PLMAalqQa2GrV_DcwrViH38cxCGGo0=);
 }
-.item9:hover{
+
+.item9:hover {
     background-position: center;
     background-color: rgb(199, 199, 199);
 }
-.item10{
+
+.item10 {
     background-color: #BE204C;
     grid-row: 3 / span 1;
     grid-column: 1 / span 1;
@@ -226,12 +257,14 @@ transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     background-image: url(https://media.istockphoto.com/id/1293479700/photo/prairie.jpg?s=612x612&w=0&k=20&c=lknaa7WzrLUPw7J1A0tig7aTz2LaeCJVexhGFOXrzD8=);
 }
-.item10:hover{
+
+.item10:hover {
     background-position: center;
     background-color: rgb(199, 199, 199);
     background-blend-mode: hard-light;
 }
-.item11{
+
+.item11 {
     background-color: #0A59C2;
     grid-row: 3 / span 1;
     grid-column: 2 / span 1;
@@ -242,11 +275,13 @@ transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     background-image: url(https://media.istockphoto.com/id/1550114537/photo/south-downs-landscape.jpg?s=612x612&w=0&k=20&c=_cpeP8Cm3fwnFKLKlqR-O_57dUd8-1MaJaN85pnW5a8=);
 }
-.item11:hover{
+
+.item11:hover {
     background-position: center;
     background-color: rgb(199, 199, 199);
 }
-.item12{
+
+.item12 {
     background-color: #2E8CEE;
     grid-row: 3 / span 2;
     grid-column: 3 / span 2;
@@ -257,11 +292,13 @@ transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     background-image: url(https://media.istockphoto.com/id/1798937156/photo/the-rays-of-the-setting-sun-illuminate-the-mountains-and-the-trail-leading-through-them.jpg?s=612x612&w=0&k=20&c=56aeBbuveZw2uqoup0WrJ4PPmJ01JIQBggmKonlmXIg=);
 }
-.item12:hover{
+
+.item12:hover {
     background-position: bottom;
     background-color: rgb(199, 199, 199);
 }
-.item13{
+
+.item13 {
     background-color: #663EBC;
     grid-row: 3 / span 1;
     grid-column: 5 / span 2;
@@ -272,11 +309,13 @@ transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     background-image: url(https://media.istockphoto.com/id/1477817772/photo/the-aurora-bored-aurora-over-the-mountains-of-alaska-at-night.jpg?s=612x612&w=0&k=20&c=ave9Hci6VMsZdet74ATzzQ2Q6NPmB0yHNPZsJpkWtn4=);
 }
-.item13:hover{
+
+.item13:hover {
     background-position: center;
     background-color: rgb(199, 199, 199);
 }
-.item14{
+
+.item14 {
     grid-row: 4 / span 1;
     grid-column: 1 / span 2;
     background-color: #D6A502;
@@ -287,11 +326,13 @@ transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     background-image: url(https://media.istockphoto.com/id/2167946758/photo/yacht-is-sailing-in-the-blue-sea-at-sunset.jpg?s=612x612&w=0&k=20&c=PFkN_OQu5vUhgni_eOd9J9Kywq1hKK9xeOqGhnrrBZ0=);
 }
-.item14:hover{
+
+.item14:hover {
     background-position: center;
     background-color: rgb(199, 199, 199);
 }
-.item15{
+
+.item15 {
     background-color: #B0183B;
     grid-row: 4 / span 1;
     grid-column: 5 / span 2;
@@ -302,36 +343,43 @@ transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     background-image: url(https://media.istockphoto.com/id/511367374/photo/beautiful-cloudscape-over-the-sea.jpg?s=612x612&w=0&k=20&c=9o5kwt9emxiKCLd-bmsLLHzoY6Bwz3F18DEkZJh3MBI=);
 }
-.item15:hover{
+
+.item15:hover {
     background-position: center;
     background-color: rgb(199, 199, 199);
 }
 
 
 @media (max-width:1024px) {
-    *{
+    * {
         overflow-x: hidden;
     }
-   .container{
-    width: 100vw;
-   }
-   .item4{
- 
-    gap: 5px;
-   }
-   .child{
-    margin: 0px 0px 0px 0px;
-   }
-    .child1{
+
+    .container {
+        width: 100vw;
+    }
+
+    .item4 {
+        gap: 5px;
+    }
+
+    .child {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .child1 {
         margin-left: 0px;
     }
-    .child2{
+
+    .child2 {
         margin-right: 0px;
     }
-    .child3{
+
+    .child3 {
         margin-left: 0px;
     }
-    .child4{
+
+    .child4 {
         margin-right: 0px;
     }
 }
